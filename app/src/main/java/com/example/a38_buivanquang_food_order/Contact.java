@@ -1,12 +1,16 @@
 package com.example.a38_buivanquang_food_order;
 
-public class Contact {
+import java.io.Serializable;
+
+public class Contact implements Serializable {
     String name;
     float cost;
+    int count;
 
-    public Contact(String name, float cost) {
+    public Contact(String name, float cost, int count) {
         this.name = name;
         this.cost = cost;
+        this.count = count;
     }
 
     public String getName() {
@@ -21,7 +25,15 @@ public class Contact {
         return cost;
     }
 
-    public void setCost(int cost) {
+    public void setCost(float cost) {
         this.cost = cost;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }

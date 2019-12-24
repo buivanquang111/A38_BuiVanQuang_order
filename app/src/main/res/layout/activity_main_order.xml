@@ -7,11 +7,10 @@
     android:orientation="vertical"
     tools:context=".Main_order">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#7E7B7B"
-        android:orientation="horizontal">
+        android:background="#7E7B7B">
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,27 +19,26 @@
             android:textStyle="bold"
             android:textSize="20dp"/>
 
+        <ImageView
+            android:id="@+id/imggiohang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:id="@+id/tvcount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="0"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/border_radius" />
 
-        <LinearLayout
-            android:id="@+id/linearlayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/giohang"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_shopping_cart_black_24dp"
-                android:layout_marginLeft="200dp"/>
-            <TextView
-                android:id="@+id/tvcount"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="-50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border_radius" />
-        </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
     <ViewFlipper
         android:id="@+id/viewlipper"
         android:layout_width="match_parent"

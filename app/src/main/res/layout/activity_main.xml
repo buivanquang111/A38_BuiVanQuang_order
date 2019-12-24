@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_above="@+id/linearlayout"
+        android:layout_above="@+id/linearlayout1"
         android:id="@+id/tvlogin"
         android:layout_width="match_parent"
         android:layout_height="200px"
@@ -20,7 +20,7 @@
         android:gravity="center"
         android:layout_centerInParent="true"/>
     <LinearLayout
-        android:id="@+id/linearlayout"
+        android:id="@+id/linearlayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -47,7 +47,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/linearlayout"
+        android:layout_below="@+id/linearlayout1"
         android:id="@+id/linearlayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

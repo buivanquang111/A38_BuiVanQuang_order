@@ -17,13 +17,12 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.Viewhold
     Icon icon;
     Context context;
 
-    public void setIcon(Icon icon){
-        this.icon=icon;
-    }
+
     public AdapterContact(List<Contact> contacts,Context context){
 
         this.context=context;
         this.contacts=contacts;
+        this.icon = (Icon) context;
     }
     @NonNull
     @Override
@@ -32,7 +31,7 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.Viewhold
         View view=inflater.inflate(R.layout.item_contect,parent,false);
 
         Viewholder viewholder=new Viewholder(view);
-        context=parent.getContext();
+
         return viewholder;
     }
 
@@ -47,7 +46,7 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.Viewhold
             @Override
             public void onClick(View v) {
                 icon.onClickName(contact);
-                icon.onClickNumber(1);
+
             }
         });
 
